@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- Internal CSS -->
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Inline CSS -->
+    <h1 style="color: blue;">Welcome to CSS Class</h1>
+
+    <p>Today, we will be learning about the Basic Structure and Syntax of CSS</p>
+
+    <button type="button">Click me</button>
+
+    <button type="button" id="start">Start now</button>
+
+    <p class="lorem dummy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facere totam voluptate, corrupti magnam quam. Nemo vero fuga nulla ut molestias ab doloribus quisquam veritatis, rerum facilis autem reiciendis dolorem!</p>
+
+    <div>
+        <p>We are having a class currently!</p>
+    </div>
+
+    <br><br>
+    
+    <input type="text" name="" id="text" placeholder="enter a text">
+    <button type="button" id="btn">🔍</button>
+    
+    <br><br>
+
+    <p>Something will appear after 10 seconds: <span id="appear"></span></p>
+
+    <script>
+        const appear = document.getElementById("appear");
+
+        setTimeout(() => {
+            appear.textContent = "It is already 10 seconds"
+        }, 10000)
+    </script>
+
+
+    <!-- HTML Table -->
+    <table> 
+        <caption>Student's Data</caption>
+
+        <!-- Heading -->
+        <tr>
+            <th>S/N</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th colspan="2">Phone number</th>
+        </tr>
+
+        <!-- First student -->
+        <tr>
+            <td>01</td>
+            <td>Ayomide Emmanuel</td>
+            <td>Male</td>
+            <td>34</td>
+            <td>08123456789</td>
+            <td>08123456789</td>
+        </tr>
+
+        <!-- Second student -->
+        <tr>
+            <td>02</td>
+            <td rowspan="2">Adebayo Teniola</td>
+            <td>Female</td>
+            <td>23</td>
+            <td>08198756789</td>
+        </tr>
+        
+        <!-- Third student -->
+        <tr>
+            <td>03</td>
+            <!-- <td>Paulina Yetunde</td> -->
+            <td>Female</td>
+            <td>24</td>
+            <td>080234541989</td>
+        </tr>
+
+        <!-- Fourth student -->
+        <tr>
+            <td>04</td>
+            <td>Goodness Idowu</td>
+            <td>Female</td>
+            <td>18</td>
+            <td>08145679789</td>
+        </tr>
+
+        <!-- Fifth student -->
+        <tr>
+            <td>05</td>
+            <td>Ayodeji Peters</td>
+            <td>Male</td>
+            <td>14</td>
+            <td>07087196289</td>
+        </tr>
+        
+    </table>
+
+    <div id="loop-container">
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.comment-section {
+    margin: 4rem auto;
+    padding: 15px 40px;
+    width: 95vw;
+    border: 2px dashed #083508;
+}
+
+div.comment-section h2 {
+    text-decoration: 4px wavy underline white;
+}
+
+div.comments-wrapper {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
+
+}
+
+div.comment-card {
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 5px 2px 2px #083508;
+}
+
+h3.comment-name {
+    color: #083508;
+}
+p.comment-email {
+    font-style: italic;
+}

@@ -1,0 +1,50 @@
+/* 
+    Basic Structure and Syntax of CSS 
+        1. Selector - pick an element or elements
+        2. Declaration Block - defined by curly braces. Declaration(s) - property - value
+*/
+
+/* 
+    Selectors
+        1. Universal Selector - selects every on the web page *
+        2. Element Selector - selects element(s) by their name tagname
+        3. Class Selector - selects element(s) by their class name .
+        4. Id Selector - selects an element by id name #
+        5. Descendant Selector - selects element(s) by their ancestor
+        
+*/
+
+/* Universal Selector */
+* {
+    font-family: monospace;
+}
+
+/* Element Selector */
+button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* Class Selector */
+.lorem {
+    color: green;
+}
+/* Isla - Olammy - Midex */
+/* Id Selector */
+#start {
+    background-color: green;
+}
+
+/* Descendant Selector */
+div p {
+    color: purple;
+}
+
+table, tr, th, td {
+    border: 2px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+}
